@@ -2,6 +2,13 @@ name: Deploy to Azure Function Slot
 
 on:
   workflow_dispatch:
+  pull_request:
+    branches:
+      - develop
+      - staging
+      - production
+    types:
+      - closed
 
 jobs:
   deploy:
