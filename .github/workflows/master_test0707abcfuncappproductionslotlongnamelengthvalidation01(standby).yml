@@ -57,7 +57,7 @@ jobs:
         uses: Azure/functions-action@v1
         id: fa
         with:
-          app-name: 'test0707abcfuncappproductionslotlongnamelengthvalidation01'
+          app-name: 'test0707abcfuncappproductionslotlongname'
           slot-name: 'standby'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_11197834E8C64265AD20FE39A7278BE3 }}
